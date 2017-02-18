@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 from django.db import models
 from django.template.defaultfilters import floatformat
 
@@ -10,7 +13,7 @@ class Player(models.Model):
     vehicles_x = models.IntegerField(verbose_name='Number of 10lvl vehicles')
     exp_total = models.BigIntegerField(verbose_name='Total experience')
     is_hidden = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(default=datetime.now, blank=True)
     # rating
     # exp_avg
 

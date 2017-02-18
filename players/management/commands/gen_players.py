@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+from django.utils import timezone
 import random
 import names
 from django.core.management import BaseCommand
@@ -48,6 +50,8 @@ class Command(BaseCommand):
 
             is_hidden = self.reset(15)
 
+            date = timezone.now() - timedelta(days=days_total)
+
             player = Player(
                 name=name,
                 battles_total=battles_total,
@@ -55,7 +59,8 @@ class Command(BaseCommand):
                 days_total=days_total,
                 vehicles_x=vehicles_x,
                 exp_total=exp_total,
-                is_hidden=is_hidden
+                is_hidden=is_hidden,
+                created_at=date
             )
 
             try:

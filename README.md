@@ -18,9 +18,9 @@ pip install django djangorestframework django-cors-headers names
 ./manage.py gen_players
 ```
 
-You can use optional parameter ``-n, --number 10`` to set number generated players
+You can use optional parameter ``--number 10`` to set number generated players
 
-Example usage: ``./manage.py gen_players -n 20``
+Example usage: ``./manage.py gen_players --number 20``
 
 ## Admin
 
