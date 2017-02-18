@@ -19,7 +19,7 @@ version 1.10
 ```apple js
 pip install django
 ```
-Install needed libraries dependency
+####Install libraries dependency
 
 ```
 pip install djangorestframework django-cors-headers names
