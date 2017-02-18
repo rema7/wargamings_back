@@ -8,7 +8,26 @@ Use next commands to install:
 pip3 install virtualenv
 virtualenv env
 source env/bin/activate
-pip install django djangorestframework django-cors-headers names
+```
+Install Django 1.9 or 1.10
+
+version 1.9
+```apple js
+pip install Django==1.9.6 
+```
+version 1.10
+```apple js
+pip install django
+```
+Install needed libraries dependency
+
+```
+pip install djangorestframework django-cors-headers names
+```
+
+Initiate Django
+
+```
 ./manage.py migrate
 ```
 
