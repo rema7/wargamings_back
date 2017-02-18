@@ -24,7 +24,7 @@ Example usage: ``./manage.py gen_players --number 20``
 
 ## Admin
 
-Create admin user via next commands
+Create admin user
 ```
 ./manage.py createsuperuser
 ```
