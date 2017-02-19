@@ -67,5 +67,7 @@ class Command(BaseCommand):
                 player.save()
             except IntegrityError as e:
                 print('Catch unique name')
+                player.name += str(random.randint(1, 9999))
+                player.save()
 
 
