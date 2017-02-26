@@ -12,11 +12,11 @@ source env/bin/activate
 #####  Install Django 1.9 or 1.10
 
 version 1.9
-```apple js
+```python
 pip install Django==1.9.6 
 ```
 version 1.10
-```apple js
+```python
 pip install django
 ```
 ####Install libraries dependency
